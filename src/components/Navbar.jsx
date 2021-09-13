@@ -52,4 +52,7 @@ function Navbar(props) {
 
 export default Navbar;
 
-Navbar.prototype = { title: PropTypes.string, about: PropTypes.string };
+Navbar.prototype = {
+  title: PropTypes.string.isRequired,
+  about: PropTypes.string,
+};
