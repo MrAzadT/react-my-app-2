@@ -3,8 +3,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div>
-      <Navbar />;
-      <Navbar />;
+      <Navbar title="Azad Tamal" about="About" />;
     </div>
   );
 }
