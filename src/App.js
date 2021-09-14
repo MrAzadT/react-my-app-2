@@ -4,7 +4,7 @@ import Text from "./components/Text";
 function App() {
   return (
     <div>
-      <Navbar title="Azad Tamal" about="About" />;
+      <Navbar title="Abid Azad Tamal" about="About" />;
       <Text heading="enter the Text" />
     </div>
   );
