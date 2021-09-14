@@ -2,11 +2,12 @@ import React, { useState } from "react";
 
 function Text(props) {
   const handelUpClick = () => {
-    console.log("hi");
-    setTest("handel Up Click");
+    let newText = text.toUpperCase();
+    setTest(newText);
   };
-  const handelOnChange = () => {
+  const handelOnChange = (e) => {
     console.log("hy");
+    setTest(e.target.value);
   };
   const [text, setTest] = useState("enter text Here");
 
