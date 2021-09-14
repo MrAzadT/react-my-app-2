@@ -6,6 +6,7 @@ function App() {
     <div>
       <Navbar title="Abid Azad Tamal" about="About" />;
       <Text heading="enter the Text" />
+      <Text heading="enter the Text" />
     </div>
   );
 }
