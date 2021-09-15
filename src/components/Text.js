@@ -5,14 +5,22 @@ function Text(props) {
     let newText = text.toUpperCase();
     setTest(newText);
   };
-  const handelBoldClick = () => {
+
+  const handelLowerClick = () => {
     let newText = text.toLowerCase();
     setTest(newText);
   };
+
+  const handelClearClick = () => {
+    let newText = "";
+    setTest(newText);
+  };
+
   const handelOnChange = (e) => {
     console.log("hy");
     setTest(e.target.value);
   };
+
   const [text, setTest] = useState("enter text Here");
 
   return (
@@ -29,8 +37,17 @@ function Text(props) {
         <button onClick={handelUpClick} className="btn btn-primary mt-4">
           Change Text
         </button>
-        <button onClick={handelBoldClick} className="btn btn-primary mt-4 mx-4">
-          bold text
+        <button
+          onClick={handelLowerClick}
+          className="btn btn-primary mt-4 mx-4"
+        >
+          Lower Case
+        </button>
+        <button
+          onClick={handelClearClick}
+          className="btn btn-primary mt-4 mx-4"
+        >
+          clear
         </button>
       </div>
       <div className="container">
@@ -38,7 +55,7 @@ function Text(props) {
         <h3>
           {text.split(" ").length} words and {text.length} characters
         </h3>
-        <p>preview {text}</p>
+        <p>preview -- {text}</p>
       </div>
     </div>
   );
