@@ -31,6 +31,7 @@ function Text(props) {
         <h3>
           {text.split(" ").length} words and {text.length} characters
         </h3>
+        <p>preview {text}</p>
       </div>
     </div>
   );
