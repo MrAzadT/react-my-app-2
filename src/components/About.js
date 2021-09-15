@@ -5,20 +5,20 @@ function About(props) {
     color: "black",
     backgroundColor: "white",
   });
-  const [btnText, setBtnText] = useState("Dark Mode");
+  const [btnText, setBtnText] = useState("Dark Mode ");
   const handelDark = () => {
     if (myStyle.color === "black") {
       setMyStyle({
         color: "white",
         backgroundColor: "black",
       });
-      setBtnText("light Mode");
+      setBtnText("Light Mode");
     } else {
       setMyStyle({
         color: "black",
         backgroundColor: "white",
       });
-      setBtnText("dark mode");
+      setBtnText("Dark mode");
     }
   };
 
