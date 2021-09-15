@@ -5,6 +5,10 @@ function Text(props) {
     let newText = text.toUpperCase();
     setTest(newText);
   };
+  const handelBoldClick = () => {
+    let newText = text.toLowerCase();
+    setTest(newText);
+  };
   const handelOnChange = (e) => {
     console.log("hy");
     setTest(e.target.value);
@@ -24,6 +28,9 @@ function Text(props) {
         ></textarea>
         <button onClick={handelUpClick} className="btn btn-primary mt-4">
           Change Text
+        </button>
+        <button onClick={handelBoldClick} className="btn btn-primary mt-4 mx-4">
+          bold text
         </button>
       </div>
       <div className="container">
