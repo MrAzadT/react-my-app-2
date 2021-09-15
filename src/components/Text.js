@@ -12,8 +12,8 @@ function Text(props) {
   const [text, setTest] = useState("enter text Here");
 
   return (
-    <div>
-      <div className="mb-3 container">
+    <div className="">
+      <div className="mb-3  container">
         <h4>{props.heading}</h4>
         <textarea
           value={text}
@@ -25,6 +25,12 @@ function Text(props) {
         <button onClick={handelUpClick} className="btn btn-primary mt-4">
           Change Text
         </button>
+      </div>
+      <div className="container">
+        <h1>your Text </h1>
+        <h3>
+          {text.split(" ").length} words and {text.length} characters
+        </h3>
       </div>
     </div>
   );
