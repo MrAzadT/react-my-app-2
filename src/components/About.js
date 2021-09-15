@@ -2,14 +2,14 @@ import React from "react";
 
 function About(props) {
   const myStyle = {
-    color: "red",
-    backgroundColor: "Gray",
+    color: "white",
+    backgroundColor: "black",
   };
 
   return (
     <div className="container" style={myStyle}>
       <h1 className="my-3">{props.heading}</h1>
-      <div className="accordion" id="accordionExample">
+      <div className="accordion" id="accordionExample" style={myStyle}>
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingOne">
             <button
@@ -24,6 +24,7 @@ function About(props) {
             </button>
           </h2>
           <div
+            style={myStyle}
             id="collapseOne"
             className="accordion-collapse collapse show"
             aria-labelledby="headingOne"
@@ -55,6 +56,7 @@ function About(props) {
             </button>
           </h2>
           <div
+            style={myStyle}
             id="collapseTwo"
             className="accordion-collapse collapse"
             aria-labelledby="headingTwo"
@@ -86,6 +88,7 @@ function About(props) {
             </button>
           </h2>
           <div
+            style={myStyle}
             id="collapseThree"
             className="accordion-collapse collapse"
             aria-labelledby="headingThree"
