@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Navbar title="Azad Tamal" about="About" />;
-      <About heading="My About" />
+      <About heading="About" />
       <Text heading="enter the Text" />
     </div>
   );
