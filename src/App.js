@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div>
-      <Navbar title="Abid Azad Tamal" about="About" />;
+      <Navbar title="Azad Tamal" about="About" />;
       {/* <Text heading="enter the Text" /> */}
       <About heading="My About" />
     </div>
