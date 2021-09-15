@@ -1,8 +1,9 @@
 import React from "react";
 
-function About() {
+function About(props) {
   return (
     <div className="container">
+      <h1 className="my-3">{props.heading}</h1>
       <div className="accordion" id="accordionExample">
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingOne">

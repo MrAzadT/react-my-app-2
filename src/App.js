@@ -7,7 +7,7 @@ function App() {
     <div>
       <Navbar title="Abid Azad Tamal" about="About" />;
       {/* <Text heading="enter the Text" /> */}
-      <About />
+      <About heading="My About" />
     </div>
   );
 }
