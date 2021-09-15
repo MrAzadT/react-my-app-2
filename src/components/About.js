@@ -1,8 +1,13 @@
 import React from "react";
 
 function About(props) {
+  const myStyle = {
+    color: "red",
+    backgroundColor: "Gray",
+  };
+
   return (
-    <div className="container">
+    <div className="container" style={myStyle}>
       <h1 className="my-3">{props.heading}</h1>
       <div className="accordion" id="accordionExample">
         <div className="accordion-item">
@@ -99,6 +104,9 @@ function About(props) {
           </div>
         </div>
       </div>
+      <button type="button" class="btn btn-dark my-3">
+        Dark Mood
+      </button>
     </div>
   );
 }
