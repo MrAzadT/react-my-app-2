@@ -34,17 +34,16 @@ function Navbar(props) {
                 </a>
               </li>
             </ul>
-            <form className="d-flex">
+            <div class="form-check form-switch">
               <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              ></input>
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckDefault"
+              />
+              <label class="form-check-label" for="flexSwitchCheckDefault">
+                Default switch checkbox input
+              </label>
+            </div>
           </div>
         </div>
       </nav>
