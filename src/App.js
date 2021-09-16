@@ -3,6 +3,7 @@ import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Text from "./components/Text";
 function App() {
+  const [darkMode, setDarkmode] = useState(false);
   return (
     <div>
       <Navbar title="Azad Tamal" about="About" />;
