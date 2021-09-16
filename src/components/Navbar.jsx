@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 function Navbar(props) {
   return (
     <div className="container">
@@ -39,9 +40,12 @@ function Navbar(props) {
                 className="form-check-input"
                 onClick={props.toggleMode}
                 type="checkbox"
-                id="toggleMode"
+                id="flexSwitchCheckDefault"
               />
-              <label className="form-check-label" for="flexSwitchCheckDefault">
+              <label
+                className="form-check-label"
+                htmlFor="flexSwitchCheckDefault"
+              >
                 Dark Mode
               </label>
             </div>
