@@ -50,6 +50,7 @@ function Text(props) {
           clear
         </button>
       </div>
+
       <div className="container">
         <h1>your Text </h1>
         <h3>
