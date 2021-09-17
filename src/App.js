@@ -21,18 +21,28 @@ function App() {
   };
 
   return (
-    <div>
-      <Navbar
-        title="Azad Tamal"
-        about="About"
-        mode={mode}
-        toggleMode={toggleMode}
-      />
-      <Alert />
+    <Router>
+      <div>
+        <Navbar
+          title="Azad Tamal"
+          about="About"
+          mode={mode}
+          toggleMode={toggleMode}
+        />
+        <Alert />
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
 
-      <About heading="About" />
-      <Text heading="enter the Text" />
-    </div>
+          <Route path="/">
+            <Text heading="enter the Text" />
+          </Route>
+        </Switch>
+
+        {/* <About heading="About" /> */}
+      </div>
+    </Router>
   );
 }
 
