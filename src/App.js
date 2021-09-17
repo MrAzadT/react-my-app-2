@@ -5,6 +5,8 @@ import Text from "./components/Text";
 import React, { useState } from "react";
 import Alert from "./components/Alert";
 
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 function App() {
   const [mode, setMode] = useState("light");
 
